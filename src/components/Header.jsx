@@ -10,9 +10,9 @@ import {
   TextField,
   InputAdornment,
   Paper,
-  Grid,
   useMediaQuery,
 } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import { motion, useScroll, useSpring } from "framer-motion";
 import SearchIcon from "@mui/icons-material/Search";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
@@ -138,7 +138,7 @@ const Header = () => {
                 }}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                InputProps={{
+                slotProps={{
                   endAdornment: (
                     <InputAdornment position="end">
                       <IconButton>
@@ -158,13 +158,13 @@ const Header = () => {
                     boxShadow: "0px 4px 10px rgba(0,0,0,0.2)",
                     borderRadius: "8px",
                     padding: 2,
-                    maxHeight: "200px",
+                    maxHeight: "400px",
                     overflowY: "auto",
                   }}
                 >
                   <Grid container spacing={1}>
                     {filteredResults.map((media) => (
-                      <Grid key={media.id} item xs={12}>
+                      <Grid key={media.id} size={{ xs: 12, sm: 12, md: 12 }}>
                         <MediaCard media={media} />
                       </Grid>
                     ))}

@@ -67,7 +67,7 @@ const Hero = () => {
               color: "rgba(255,255,255,0.8)",
             }}
           >
-           View the latest images and videos of your favorite games
+           View the latest images of your favorites
           </Typography>
         </motion.div>
       </motion.div>

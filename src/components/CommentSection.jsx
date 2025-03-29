@@ -16,7 +16,7 @@ const CommentSection = ({ comments = [] }) => {
           <Avatar sx={{ marginRight: "8px" }}>
             {(comment.username || "U").charAt(0)}
           </Avatar>
-          <Typography variant="body1">{comment.text}</Typography>
+          <Typography variant="body1" sx={{ color: "#000" }}>{comment.text}</Typography>
         </Box>
       ))}
     </Box>

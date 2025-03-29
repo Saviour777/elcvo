@@ -14,7 +14,7 @@ import {
 import { CloudUpload, Delete } from "@mui/icons-material";
 import { uploadMedia } from "../../services/api";
 
-const categories = ["Images", "Videos"];
+const categories = ["Images"];
 
 const UploadMediaPage = () => {
   const [title, setTitle] = useState("");
@@ -222,7 +222,10 @@ const UploadMediaPage = () => {
           {loading && (
             <Box sx={{ width: "100%", mb: 2 }}>
               <LinearProgress variant="determinate" value={progress} />
-              <Typography variant="body2" sx={{ textAlign: "center", mt: 1, color: "#FF9800" }}>
+              <Typography
+                variant="body2"
+                sx={{ textAlign: "center", mt: 1, color: "#FF9800" }}
+              >
                 Uploading... {progress}%
               </Typography>
             </Box>
@@ -244,9 +247,9 @@ const UploadMediaPage = () => {
             }}
           >
             {loading ? (
-              <CircularProgress size={24} color="inherit" />
+              <CircularProgress size={24} color="#FF9800" />
             ) : (
-              "Upload"
+              "Upload Image"
             )}
           </Button>
 

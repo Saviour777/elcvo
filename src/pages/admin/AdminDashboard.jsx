@@ -58,9 +58,9 @@ const AdminDashboard = () => {
 
       <List>
         {[
-          { text: "Visit Site", path: "/" },
-          { text: "Dashboard", path: "/admin" },
-          { text: "Upload Video", path: "/admin/upload" },
+          { text: "HOME", path: "/" },
+          { text: "OVERVIEW", path: "/admin" },
+          { text: "UPLOAD IMAGES", path: "/admin/upload" },
         ].map((item, index) => (
           <ListItem
             button

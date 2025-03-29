@@ -52,7 +52,7 @@ const MediaDetails = () => {
   };
 
   return (
-    <Box sx={{ width: "100%", minHeight: "100vh", position: "relative", marginTop: 8 }}>
+    <Box sx={{ width: "100%", minHeight: "100vh", position: "relative", marginTop: 8, bgcolor: "#f7f7f7" }}>
       {/* Hero Banner */}
       <Box
         sx={{
