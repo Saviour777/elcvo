@@ -46,11 +46,11 @@ const LoginPage = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#000",
+        backgroundColor: "gray",
         padding: "16px",
         margin: "0px auto",
         height: "100vh",
-        width: "50%",  
+        width: "60%",  
       }}
     >
       <Typography variant="h4" gutterBottom>

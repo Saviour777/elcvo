@@ -38,7 +38,7 @@ const SignUpPage = () => {
   return (
     <div
       style={{
-        backgroundColor: "#000",
+        backgroundColor: "gray",
         padding: "16px",
         margin: "0px auto",
         display: "flex",
